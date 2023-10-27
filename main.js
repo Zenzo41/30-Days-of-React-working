@@ -1,11 +1,12 @@
-const numbers =[1,2,3,4,5,6];
+const fruits = ['apple','banana','cherry','date','fig'];
 
-a = numbers.slice(1,4);
-b =numbers.slice(0);
-c =numbers.slice(0,2);
-d =numbers.slice();
+console.log(fruits);
 
-console.log(a);
-console.log(b);
-console.log(c);
-console.log(d);
+console.log(fruits.splice(2,1)); // cherry is removed
+console.log(fruits);
+
+console.log(fruits.splice(1,2,'lemon','kiwi')); // banana and date are replaced
+console.log(fruits);
+
+console.log(fruits.splice(3,0,'grape')); //adding grape w/o removing/replacing any element
+console.log(fruits);
