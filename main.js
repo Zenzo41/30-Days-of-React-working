@@ -1,7 +1,9 @@
-const arr = ['item1','item2','item3'];
-arr.push('item4');
+const numbers = [1,2,3,4,5];
 
-console.log(arr);
+numbers.shift();
+console.log(numbers);
 
-arr.pop();
-console.log(arr);
+
+const num =[1,2,3,4,5];
+num.unshift(0);
+console.log(num);
