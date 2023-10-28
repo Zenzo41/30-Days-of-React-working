@@ -1,9 +1,7 @@
-const numbers = [1,2,3,4,5];
+//reversing order of an array
 
-numbers.shift();
+const numbers = [1,2,3,4,5];
 console.log(numbers);
 
-
-const num =[1,2,3,4,5];
-num.unshift(0);
-console.log(num);
+numbers.reverse();
+console.log(numbers);
