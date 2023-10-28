@@ -10,3 +10,6 @@ console.log(fruits);
 
 console.log(fruits.splice(3,0,'grape')); //adding grape w/o removing/replacing any element
 console.log(fruits);
+
+console.log(fruits.splice(4,0,'melon'));
+console.log(fruits);
