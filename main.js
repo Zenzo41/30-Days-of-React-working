@@ -7,3 +7,5 @@ const webTechs=[
 console.log(webTechs);
 webTechs.sort();
 console.log(webTechs);
+webTechs.reverse();
+console.log(webTechs);
