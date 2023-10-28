@@ -1,8 +1,15 @@
-const frontEnd = ['HTML','CSS','JS','React','Redux'];
-const BackEnd = ['Node','django','Express','MongoDB'];
+let num = 3;
+if(num>0)
+{
+    console.log(`${num} is a positive number`);
+}
+else
+{
+    console.log(`${num} is not a positive number`)
+}
 
-const FullStack= [frontEnd,BackEnd];
-
-console.log(FullStack);
-console.log(FullStack[0]);
-console.log(FullStack[1]);
+let isRaining = true;
+if(isRaining)
+{
+    console.log('Remember to take your umberella');
+}
