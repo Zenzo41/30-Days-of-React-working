@@ -1,7 +1,9 @@
-//reversing order of an array
+//sorting elements in an array
 
-const numbers = [1,2,3,4,5];
-console.log(numbers);
+const webTechs=[
+    'HTML','CSS','JS','React','Redux','MongoDB'
+];
 
-numbers.reverse();
-console.log(numbers);
+console.log(webTechs);
+webTechs.sort();
+console.log(webTechs);
