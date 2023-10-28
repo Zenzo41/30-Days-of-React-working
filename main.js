@@ -1,11 +1,8 @@
-//sorting elements in an array
+const frontEnd = ['HTML','CSS','JS','React','Redux'];
+const BackEnd = ['Node','django','Express','MongoDB'];
 
-const webTechs=[
-    'HTML','CSS','JS','React','Redux','MongoDB'
-];
+const FullStack= [frontEnd,BackEnd];
 
-console.log(webTechs);
-webTechs.sort();
-console.log(webTechs);
-webTechs.reverse();
-console.log(webTechs);
+console.log(FullStack);
+console.log(FullStack[0]);
+console.log(FullStack[1]);
