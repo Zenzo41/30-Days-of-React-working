@@ -1,24 +1,39 @@
-// if else if
+//switch
 
-let num = "a";
-if(num>0){
-    console.log(`${num} is a positive number`);
-} else if (num<0){
-    console.log(`${num} is a negative number`);
-}else if(num==0){
-    console.log(`${num} is zero`);
-}else{
-    console.log(`${num} is not a number`)
-}
+let dayUserInput = prompt('What day is today?');
+let day = dayUserInput.toLowerCase();
 
+switch(day)
+{
+        case 'sunday':
+            console.log('Sunday');
+            break;
 
-let weather = 'sunny'
-if (weather === 'rainy') {
-  console.log('You need a rain coat.')
-} else if (weather === 'cloudy') {
-  console.log('It might be cold, you need a jacket.')
-} else if (weather === 'sunny') {
-  console.log('Go out freely.')
-} else {
-  console.log('No need for rain coat.')
+        case 'monday':
+            console.log('Monday');
+            break;
+
+        case 'tuesday':
+            console.log('Tuesday');
+            break;
+
+        case 'wednesday':
+            console.log('Wednesday');
+            break;
+
+        case 'thursday':
+            console.log('Thursday');
+            break;
+        
+        case 'friday':
+            console.log('Friday');
+            break;
+
+        case 'saturday':
+            console.log('Saturday');
+            break;
+
+        default:
+            console.log("It is not a week day");
+            break;
 }
