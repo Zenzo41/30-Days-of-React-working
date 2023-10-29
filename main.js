@@ -1,8 +1,7 @@
-//while loop
+// do while loop
 
-let count = prompt("Enter a positive number:");
-while(count>0)
-{
+let count = 0;
+do {
     console.log(count);
-    count--;
-}
+    count++;
+}while(count<11)
