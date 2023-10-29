@@ -1,7 +1,5 @@
-// for of loop handy with array
-
-const nums = [1,2,3,4,5];
-for (const num of nums)
+const countryNames = ["USA","UK", "Canada", "Australia", "Germany"];
+for(const country of countryNames)
 {
-    console.log(num);
+    console.log(country);
 }
