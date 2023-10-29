@@ -1,7 +1,7 @@
-// do while loop
+// for of loop handy with array
 
-let count = 0;
-do {
-    console.log(count);
-    count++;
-}while(count<11)
+const nums = [1,2,3,4,5];
+for (const num of nums)
+{
+    console.log(num);
+}
