@@ -1,5 +1,5 @@
-const countryNames = ["USA","UK", "Canada", "Australia", "Germany"];
-for(const country of countryNames)
+const vegetables = ['potato','cabbage','carrot','eggplant'];
+for(const vege of vegetables)
 {
-    console.log(country);
+    console.log(vege);
 }
