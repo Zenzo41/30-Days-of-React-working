@@ -1,6 +1,9 @@
-for(let i = 0 ;i<=5; i++){
-    if(i==3){
-        continue;
+a = 'JAVASCRIPT';
+b = 100;
+function LearnScope(a,b){
+    console.log(a,b);
+    if(true){
+        console.log(a,b);
     }
-    console.log(i);
 }
+console.log(a,b);
