@@ -1,10 +1,6 @@
-const traits = {
-    Zen: 'Dedicated',
-    Raftaar: 'Fast',
-    King:'All Rounder'
-};
-
-for(const key in traits)
-{
-    console.log(`${key}: ${traits[key]}`);
+for(let i = 0 ;i<=5; i++){
+    if(i==3){
+        break;
+    }
+    console.log(i);
 }
