@@ -1,14 +1,5 @@
-//for in loop
+const foods = ['sandwich','burger','pizza','momo','seaweed'];
 
-const data={
-    firstName: "Zen",
-    lastName: "Sama",
-    age: 22,
-    country: "Nepal",
-    skills: ['HTML','CSS','JS','django','SQLite','Python']
-};
-
-for(const d in data)
-{
-    console.log(d,data[d]);
-}
+foods.forEach((food,i,foods)=>{
+    console.log(`${i+1}. ${food}`);
+});
