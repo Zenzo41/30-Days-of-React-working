@@ -1,5 +1,10 @@
-const foods = ['sandwich','burger','pizza','momo','seaweed'];
+const traits = {
+    Zen: 'Dedicated',
+    Raftaar: 'Fast',
+    King:'All Rounder'
+};
 
-foods.forEach((food,i,foods)=>{
-    console.log(`${i+1}. ${food}`);
-});
+for(const key in traits)
+{
+    console.log(`${key}: ${traits[key]}`);
+}
