@@ -1,3 +1,4 @@
+//window scope
 a = 'JAVASCRIPT';
 b = 100;
 function LearnScope(a,b){
