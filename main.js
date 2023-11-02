@@ -1,15 +1,6 @@
-let a = 'JavaScript';
-let b = 10; 
-function letsLearnScope() {
-  console.log(a, b) 
-  let c = 30
-  if (true) {
-    let a = 'Python'
-    let b = 20
-    let d = 40 
-    console.log(a, b, c) 
-  }
-  console.log(a, b) 
+const rectangle = {
+  length:20,
+  breadth:22
 }
-letsLearnScope()
-console.log(a, b)
+console.log(rectangle.length);
+console.log(rectangle.breadth);
