@@ -1,6 +1,8 @@
-const rectangle = {
-  length:20,
-  breadth:22
+const person = {
+  firstName: 'Zen',
+  lastName: 'Sama',
+  age:22,
+  skills:['HTML','CSS','Javascript'],
+  isMarried: true
 }
-console.log(rectangle.length);
-console.log(rectangle.breadth);
+console.log(person.skills);
