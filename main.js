@@ -18,10 +18,5 @@ const person = {
 const copyPerson = Object.assign({}, person)
 console.log(copyPerson)
 
-const keys = Object.keys(copyPerson)
-console.log(keys) //['name', 'age', 'country', 'skills', 'address', 'getPersonInfo']
-const address = Object.keys(copyPerson.address)
-console.log(address) //['street', 'pobox', 'city']
-
-const values = Object.values(copyPerson)
-console.log(values)
+const entries = Object.entries(copyPerson)
+console.log(entries)
