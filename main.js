@@ -1,5 +1,8 @@
-const fullName = (firstName,lastName)=>{
-    return `${firstName} ${lastName}`;
-}
+//Default parameters
 
-console.log(fullName('Zen','Sama'));
+function greetings(name = 'Zen'){
+    let message = `${name}, welcome to the class`;
+    return message;
+}
+console.log(greetings());
+console.log(greetings("Sonam"));
