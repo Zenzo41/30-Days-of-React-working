@@ -1,9 +1,14 @@
-function sumTwoNumbers(numOne, numTwo) {
-    let sum = numOne + numTwo
-    return sum
-  }
-  console.log(sumTwoNumbers(10, 20))
-function printFullName(firstName, lastName) {
-  return `${firstName} ${lastName}`
+// function with many parameter
+
+function sumArrayValues(arr)
+{
+    let sum = 0;
+    for (let i = 0; i<arr.length;i++)
+    {
+        sum = sum+arr[i];
+    }
+    return sum;
 }
-console.log(printFullName('Asabeneh', 'Yetayeh'))
+
+const numbers = [1,2,3,4,5];
+console.log("Sum of array values: "+sumArrayValues(numbers));
