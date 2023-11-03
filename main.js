@@ -1,7 +1,9 @@
-function AreaofCircle(radius)
-{
-    let area = Math.PI*radius*radius;
-    return area;
+function sumTwoNumbers(numOne, numTwo) {
+    let sum = numOne + numTwo
+    return sum
+  }
+  console.log(sumTwoNumbers(10, 20))
+function printFullName(firstName, lastName) {
+  return `${firstName} ${lastName}`
 }
-
-console.log(AreaofCircle(7));
+console.log(printFullName('Asabeneh', 'Yetayeh'))
