@@ -1,6 +1,5 @@
-function calculateAge(birthYear, currentYear = 2023) {
-    let age = currentYear - birthYear
-    return age
-  }
-  
-  console.log('Age: ', calculateAge(2001))
+function  weightOfObject (mass,gravity=9.81){
+    let weight = mass * gravity + 'N';
+    return weight;
+}
+console.log('Weight of object in Newton: ',weightOfObject(100));
