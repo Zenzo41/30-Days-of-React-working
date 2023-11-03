@@ -1,12 +1,5 @@
-const changeToUpperCase = (arr)=>{
-    const newArr = []
-    for (const element of arr)
-    {
-        newArr.push(element.toUpperCase())
-    }
-    return newArr
+const fullName = (firstName,lastName)=>{
+    return `${firstName} ${lastName}`;
 }
 
-const inputArray = ['Sonam'];
-const result = changeToUpperCase(inputArray);
-console.log(result);
+console.log(fullName('Zen','Sama'));
