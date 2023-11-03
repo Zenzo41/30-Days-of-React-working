@@ -1,8 +1,6 @@
-//Default parameters
-
-function greetings(name = 'Zen'){
-    let message = `${name}, welcome to the class`;
-    return message;
-}
-console.log(greetings());
-console.log(greetings("Sonam"));
+function calculateAge(birthYear, currentYear = 2023) {
+    let age = currentYear - birthYear
+    return age
+  }
+  
+  console.log('Age: ', calculateAge(2001))
