@@ -1,9 +1,10 @@
-//Callback - higher order function where function can be passed as 
-// parameter to another function
-
-const callback = (n)=> n*n;
-function cube(callback,n){
-    return callback(n)*n;
+const higherOrder = n =>{
+    const doSomething = m =>{
+        const doWhatever = t =>{
+            return 2 * n + 3 * m + t;
+        }
+        return doWhatever
+    }
+    return doSomething
 }
-
-console.log(cube(callback,2));
+console.log(higherOrder(2)(3)(10))
