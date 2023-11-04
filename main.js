@@ -5,4 +5,4 @@ function sayHello()
     console.log('Hello');
 }
 
-setInterval(sayHello,2000);
+setTimeout(sayHello,2000);
