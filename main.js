@@ -1,10 +1,13 @@
-const higherOrder = n =>{
-    const doSomething = m =>{
-        const doWhatever = t =>{
-            return 2 * n + 3 * m + t;
-        }
-        return doWhatever
+const numbers = [1,2,3,4];
+const sumArray = arr => {
+    let sum = 0;
+    const callback = function(element){
+        sum += element;
     }
-    return doSomething
+    arr.forEach(callback)
+    {
+        return sum
+    }
 }
-console.log(higherOrder(2)(3)(10))
+
+console.log(sumArray(numbers));
