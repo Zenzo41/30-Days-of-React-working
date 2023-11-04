@@ -1,8 +1,11 @@
-//Setting time
+//Accessing array items using loop
+numbers = [1,2,3,4,5];
+countries = ['Finland','Nepal','USA','UK'];
 
-function sayHello()
-{
-    console.log('Hello');
+for (const number of numbers){
+    console.log(number);
 }
 
-setTimeout(sayHello,2000);
+for(const country of countries){
+    console.log(country);
+}
