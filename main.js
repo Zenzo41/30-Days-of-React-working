@@ -1,13 +1,6 @@
-//Destructuring Nested Arrats
+//Skipping item during destructuring
+// put comma at that index
 
-const fullStack = [
-    ['HTML','CSS','JS','React'],
-    ['Node','Express','MongoDB']
-];
-
-const [frontEnd,backEnd] = fullStack;
-console.log(frontEnd,backEnd);
-
-frontEnd.forEach((item,i,frontEnd)=>{
-    console.log(`${i+1}. ${item}`);
-});
+const countries = ['Finland', 'Sweden', 'Iceland', 'Norway', 'Denmark'];
+const [fin, , ice, , den] = countries;
+console.log(fin,ice,den);
