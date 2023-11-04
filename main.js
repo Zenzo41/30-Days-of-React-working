@@ -1,6 +1,6 @@
-//Skipping item during destructuring
-// put comma at that index
+//getting rest of array using spread operator
 
-const countries = ['Finland', 'Sweden', 'Iceland', 'Norway', 'Denmark'];
-const [fin, , ice, , den] = countries;
-console.log(fin,ice,den);
+const nums = [1,2,3,4,5,6,7,8,9,10];
+
+const [num1,num2,num3,...rest] = nums;
+console.log(num1,num2,num3,rest);
