@@ -1,5 +1,9 @@
-function  weightOfObject (mass,gravity=9.81){
-    let weight = mass * gravity + 'N';
-    return weight;
+//Callback - higher order function where function can be passed as 
+// parameter to another function
+
+const callback = (n)=> n*n;
+function cube(callback,n){
+    return callback(n)*n;
 }
-console.log('Weight of object in Newton: ',weightOfObject(100));
+
+console.log(cube(callback,2));
