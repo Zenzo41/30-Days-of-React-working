@@ -1,15 +1,13 @@
-// Accessing array items manually
+//Destructuring arrays
 
 const numbers = [1,2,3];
-let num1 = numbers[0];
-let num2 = numbers[1];
-let num3 = numbers[2];
+const [n1,n2,n3] = numbers;
+console.log(n1,n2,n3);
 
-console.log(num1,num2,num3);
+const constants = [2.72, 3.14, 9.81,37, 100]
+const [e, pi, gravity, bodyTemp, boilingTemp] = constants
+console.log(e, pi, gravity, bodyTemp, boilingTemp)
 
-const countries = ['Finland','Sweden','Norway'];
-let country1 = countries[0];
-let country2 = countries[1];
-let country3 = countries[2];
-
-console.log(country1,country2,country3);
+const countries = ['Finland', 'Sweden', 'Norway']
+const [fin, swe, nor] = countries
+console.log(fin, swe, nor)
