@@ -1,11 +1,8 @@
-const numbers = [1,2,3,4];
+//Setting time
 
-const sumArray = arr =>{
-    let sum = 0 ;
-    arr.forEach(function(element){
-        sum += element;
-    })
-    return sum;
+function sayHello()
+{
+    console.log('Hello');
 }
 
-console.log(sumArray(numbers));
+setInterval(sayHello,2000);
