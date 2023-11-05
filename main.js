@@ -1,15 +1,8 @@
-// Destructuring when we loop through arrays
+const rectangle = {
+    width: 20,
+    height: 10,
+  };
 
-const fullStack = [
-    ['HTML','CSS','JS','React'],
-    ['Node','Express','MongoDB'],
-]
 
-for(const [first,second,third,fourth="That's it"] of fullStack)
-{
-    console.log(first,second,third,fourth)
-}
-
-//React Hooks useState hook?
-const [x,y] =[2,(value) => value **2 ]
-console.log(x);
+let { width, height,perimeter= 200 } = rectangle;
+console.log(width, height,perimeter);
