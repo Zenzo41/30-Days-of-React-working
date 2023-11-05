@@ -1,17 +1,11 @@
-const languages = [
-  { lang:'english',count:91},
-  { lang: 'French', count: 45 },
-  { lang: 'Arabic', count: 25 },
-  { lang: 'Spanish', count: 24 },
-  { lang: 'Russian', count: 9 },
-  { lang: 'Portuguese', count: 9 },
-  { lang: 'Dutch', count: 8 },
-  { lang: 'German', count: 7 },
-  { lang: 'Chinese', count: 5 },
-  { lang: 'Swahili', count: 4 },
-  { lang: 'Serbian', count: 4 },
-]
+const rectangle = { width: 20, height: 10 };
+const calculateArea = (width, height) => width * height;
 
-for (const {lang,count} of languages){
-  console.log(`${lang} is spoken in ${count} countries`);
-};
+console.log(`Rectangle Width: ${rectangle.width}`);
+console.log(`Rectangle Height: ${rectangle.height}`);
+
+const calculatePerimeter = ({ width, height }) => 2 * (width + height);
+
+const perimeter = calculatePerimeter(rectangle);
+
+console.log(`Calculated Perimeter: ${perimeter}`);
