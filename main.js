@@ -4,5 +4,5 @@ const rectangle = {
   };
 
 
-let { width, height,perimeter= 200 } = rectangle;
-console.log(width, height,perimeter);
+let { width:w, height:h,perimeter:p = 200 } = rectangle;
+console.log(w,h,p);
