@@ -1,8 +1,21 @@
-const rectangle = {
-    width: 20,
-    height: 10,
-  };
+const props = {
+  user: {
+    firstName: "Zen",
+    lastName: "Sama",
+    age: 22,
+  },
+  post: {
+    title: "Destructuring and Spread",
+    subtitles: "ES6",
+    year: 2023,
+  },
+  skills: ["JS", "React", "Redux", "Node", "Python"],
+};
 
+const {
+  user: { firstName, lastName, age },
+  post: { title, subtitle, year },
+  skills: [skillOne, skillTwo, skillThree, skillFour, skillFive],
+} = props;
 
-let { width:w, height:h,perimeter:p = 200 } = rectangle;
-console.log(w,h,p);
+console.log(props.user.firstName);
