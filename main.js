@@ -1,21 +1,17 @@
-const props = {
-  user: {
-    firstName: "Zen",
-    lastName: "Sama",
-    age: 22,
-  },
-  post: {
-    title: "Destructuring and Spread",
-    subtitles: "ES6",
-    year: 2023,
-  },
-  skills: ["JS", "React", "Redux", "Node", "Python"],
+const languages = [
+  { lang:'english',count:91},
+  { lang: 'French', count: 45 },
+  { lang: 'Arabic', count: 25 },
+  { lang: 'Spanish', count: 24 },
+  { lang: 'Russian', count: 9 },
+  { lang: 'Portuguese', count: 9 },
+  { lang: 'Dutch', count: 8 },
+  { lang: 'German', count: 7 },
+  { lang: 'Chinese', count: 5 },
+  { lang: 'Swahili', count: 4 },
+  { lang: 'Serbian', count: 4 },
+]
+
+for (const {lang,count} of languages){
+  console.log(`${lang} is spoken in ${count} countries`);
 };
-
-const {
-  user: { firstName, lastName, age },
-  post: { title, subtitle, year },
-  skills: [skillOne, skillTwo, skillThree, skillFour, skillFive],
-} = props;
-
-console.log(props.user.firstName);
