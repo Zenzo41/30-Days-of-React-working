@@ -1,9 +1,5 @@
-const evens = [0,2,4,6,8,10]
-const odds = [1,3,5,7,9]
+const frontEnd = ['HTML', 'CSS', 'JS', 'React']
+const backEnd = ['Node', 'Express', 'MongoDB']
+const fullStack = [...frontEnd, ...backEnd]
 
-const evenNumbers = [...evens]
-const oddNumbers = [...odds]
-
-const wholeNumbers = [...odds,...evens];
-
-console.log(wholeNumbers)
+console.log(fullStack)
