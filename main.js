@@ -1,9 +1,3 @@
-const user = {
-    name:'Zen',
-    title:'Programmer',
-    country:'Finland',
-    city:'Helsinki'
+const sumAllNums = (...args) => {
+    console.log(args)
 }
-
-const copiedUser = {...user,title:'instructor'}
-console.log(copiedUser)
