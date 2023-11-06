@@ -1,6 +1,9 @@
 const user = {
-    name:'Zen'
+    name:'Zen',
+    title:'Programmer',
+    country:'Finland',
+    city:'Helsinki'
 }
 
-const copiedUser = {...user}
+const copiedUser = {...user,title:'instructor'}
 console.log(copiedUser)
