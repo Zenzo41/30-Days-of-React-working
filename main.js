@@ -1,5 +1,7 @@
-const countries = ['Finland', 'Estonia', 'Sweden', 'Norway']
-const newCountries = []
+const countries = ['Finland','Estonia','Sweden','Norway']
+const newCountries = countries.map(function (country)
+{
+    return country.toUpperCase()
+})
 
-countries.forEach((country)=> newCountries.push(country))
-countries.forEach((country, i) => console.log(i, country))
+console.log(newCountries)
