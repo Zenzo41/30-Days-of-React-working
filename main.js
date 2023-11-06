@@ -1,5 +1,6 @@
-const frontEnd = ['HTML', 'CSS', 'JS', 'React']
-const backEnd = ['Node', 'Express', 'MongoDB']
-const fullStack = [...frontEnd, ...backEnd]
+const user = {
+    name:'Zen'
+}
 
-console.log(fullStack)
+const copiedUser = {...user}
+console.log(copiedUser)
