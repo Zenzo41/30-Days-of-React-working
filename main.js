@@ -1,11 +1,9 @@
-const rectangle = { width: 20, height: 10 };
-const calculateArea = (width, height) => width * height;
+const evens = [0,2,4,6,8,10]
+const odds = [1,3,5,7,9]
 
-console.log(`Rectangle Width: ${rectangle.width}`);
-console.log(`Rectangle Height: ${rectangle.height}`);
+const evenNumbers = [...evens]
+const oddNumbers = [...odds]
 
-const calculatePerimeter = ({ width, height }) => 2 * (width + height);
+const wholeNumbers = [...odds,...evens];
 
-const perimeter = calculatePerimeter(rectangle);
-
-console.log(`Calculated Perimeter: ${perimeter}`);
+console.log(wholeNumbers)
