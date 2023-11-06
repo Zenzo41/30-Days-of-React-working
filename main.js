@@ -1,4 +1,5 @@
-const countries = ['India','UK','USA']
-countries.forEach((item,i,countries) => {
-    console.log(`${i+1}. ${item}`);    
-});
+const countries = ['Finland', 'Estonia', 'Sweden', 'Norway']
+const newCountries = []
+
+countries.forEach((country)=> newCountries.push(country))
+countries.forEach((country, i) => console.log(i, country))
