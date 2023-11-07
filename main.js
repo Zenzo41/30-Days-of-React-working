@@ -1,5 +1,5 @@
-const countries = ['Finland', 'Estonia', 'Sweden', 'Norway'];
-const clength = countries.map((country) => {
-    return country.length;
+const countries = ['Finland', 'Estonia', 'Sweden', 'Norway', 'Iceland'];
+const countriesWithLand = countries.filter((country) => {
+    return country.includes('land');
 });
-console.log(clength);
+console.log(countriesWithLand);
