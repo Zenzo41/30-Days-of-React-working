@@ -31,22 +31,15 @@ class Person {
     }
   }
   
-  const person1 = new Person('Asabeneh', 'Yetayeh', 250, 'Finland', 'Helsinki');
-  const person2 = new Person('Lidiya', 'Tekle', 28, 'Finland', 'Espoo');
+  const p1 = new Person('Zen','Sama',22,'Norway','Ottoman');
+  p1.setScore = 1;
+  p1.setSkill = 'HTML';
+  p1.setSkill = 'CSS';
+  p1.setSkill = 'Javascript';
+
+  console.log(p1.getScore);
+  console.log(p1.getSkills[0]);
+  console.log(p1.getSkills[1]);
+  console.log(p1.getSkills[2]);
   
-  person1.setScore = 1;
-  person1.setSkill = 'HTML';
-  person1.setSkill = 'CSS';
-  person1.setSkill = 'JavaScript';
-  
-  person2.setScore = 1;
-  person2.setSkill = 'Planning';
-  person2.setSkill = 'Managing';
-  person2.setSkill = 'Organizing';
-  
-  console.log(person1.getScore); // Corrected way to access the score using a getter
-  console.log(person2.getScore); // Corrected way to access the score using a getter
-  
-  console.log(person1.getSkills); // Corrected way to access the skills using a getter
-  console.log(person2.getSkills); // Corrected way to access the skills using a getter
   
