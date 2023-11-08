@@ -1,3 +1,3 @@
-const  words = ['Hello','','World','!'];
-const concatenatedString = words.reduce((accum,current)=> accum+current+' ');
-console.log(concatenatedString);
+const words = ['apple', 'banana', 'cherry', 'date'];
+const startsWithB = words.find((word) => word.startsWith('b'));
+console.log(startsWithB);
