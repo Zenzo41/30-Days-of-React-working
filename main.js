@@ -6,6 +6,10 @@ class Person {
     }
   }
   
-  const person = new Person()
-  
-  console.log(person)
+const person1 = new Person("Zen","Sama");
+const person2 = new Person("Ab","Sama");
+const person3 = new Person("asca","Sama");
+
+console.log(person1);
+console.log(person1);
+console.log(person1);
