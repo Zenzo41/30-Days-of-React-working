@@ -1,21 +1,16 @@
 class Person {
-    constructor(
-      firstName = 'Asabeneh',
-      lastName = 'Yetayeh',
-      age = 250,
-      country = 'Finland',
-      city = 'Helsinki'
-    ) {
+    constructor(firstName, lastName, age, country, city) {
       this.firstName = firstName
       this.lastName = lastName
       this.age = age
       this.country = country
       this.city = city
     }
+    getFullName() {
+      const fullName = this.firstName + ' ' + this.lastName
+      return fullName
+    }
   }
-  
-  const person1 = new Person() // it will take the default values
-  const person2 = new Person('Lidiya', 'Tekle', 28, 'Finland', 'Espoo')
-  
-  console.log(person1)
-  console.log(person2)
+
+  const p1 = new Person('Zen','Sama',22,'USA','New York');
+  console.log(p1.getFullName())
