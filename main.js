@@ -1,49 +1,42 @@
-class Person {
-  constructor(firstName, lastName, age, country, city) {
-    this.firstName = firstName
-    this.lastName = lastName
-    this.age = age
-    this.country = country
-    this.city = city
-    this.score = 0
-    this.skills = []
-  }
-  getFullName() {
-    const fullName = this.firstName + ' ' + this.lastName
-    return fullName
-  }
-  get getScore() {
-    return this.score
-  }
-  get getSkills() {
-    return this.skills
-  }
-  set setScore(score) {
-    this.score += score
-  }
-  set setSkill(skill) {
-    this.skills.push(skill)
-  }
-  getPersonInfo() {
-    let fullName = this.getFullName()
-    let skills =
-      this.skills.length > 0 &&
-      this.skills.slice(0, this.skills.length - 1).join(', ') +
-        ` and ${this.skills[this.skills.length - 1]}`
-    let formattedSkills = skills ? `He knows ${skills}` : ''
+//Static Method
+//The static method is a special type of method that belongs to the class rather than an instance of a class. It can be called on any object
 
-    let info = `${fullName} is ${this.age}. He lives ${this.city}, ${this.country}. ${formattedSkills}`
-    return info
+class Demo{
+  constructor(name,age){
+    this.name = name;
+    this.age = age;
+  }
+
+  get getNameandAge()
+  {
+    const nameandage = `Your name is ${this.name} and you are ${this.age} years old`;
+    return nameandage;
+  };
+
+  static dateandtime()
+  {
+    let now = new Date()
+    let year = now.getFullYear()
+    let month = now.getMonth() + 1
+    let date = now.getDate()
+    let hours = now.getHours()
+    let minutes = now.getMinutes()
+    if (hours < 10) {
+      hours = '0' + hours
+    }
+    if (minutes < 10) {
+      minutes = '0' + minutes
+    }
+
+    let dateMonthYear = date + '.' + month + '.' + year
+    let time = hours + ':' + minutes
+    let fullTime = dateMonthYear + ' ' + time
+    return fullTime
   }
 }
 
-const P1 = new Person('zen','Sama',22,'inISAS','JISDHF');
-P1.setScore = 90;
-P1.setSkill='Sjkjhasd';
-P1.setSkill='sdjksd';
-P1.setSkill='sdhic';
+const p1 = new Demo('Zen Sama', 77);
+console.log(p1.getNameandAge);
+console.log(Demo.dateandtime());
+// console.log(p1.dateandtime()); doesnt work as it isnt class but its instance 
 
-console.log(P1.getFullName);
-console.log(P1.getPersonInfo);
-console.log(P1.getScore);
-console.log(P1.getSkills);
