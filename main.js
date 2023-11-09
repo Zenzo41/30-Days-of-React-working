@@ -1,42 +1,23 @@
-//Static Method
-//The static method is a special type of method that belongs to the class rather than an instance of a class. It can be called on any object
+//Inheritance
 
-class Demo{
-  constructor(name,age){
-    this.name = name;
-    this.age = age;
-  }
+//Using inheritance we can access all the properties and the methods of the parent class. This reduces repetition of code. If you remember, we have a Person parent class and we will create children from it. Our children class could be student, teach etc.
 
-  get getNameandAge()
-  {
-    const nameandage = `Your name is ${this.name} and you are ${this.age} years old`;
-    return nameandage;
-  };
-
-  static dateandtime()
-  {
-    let now = new Date()
-    let year = now.getFullYear()
-    let month = now.getMonth() + 1
-    let date = now.getDate()
-    let hours = now.getHours()
-    let minutes = now.getMinutes()
-    if (hours < 10) {
-      hours = '0' + hours
-    }
-    if (minutes < 10) {
-      minutes = '0' + minutes
+class Person{
+  constructor(name, age){
+        this.name = name;
+        this.age = age;
     }
 
-    let dateMonthYear = date + '.' + month + '.' + year
-    let time = hours + ':' + minutes
-    let fullTime = dateMonthYear + ' ' + time
-    return fullTime
-  }
 }
 
-const p1 = new Demo('Zen Sama', 77);
-console.log(p1.getNameandAge);
-console.log(Demo.dateandtime());
-// console.log(p1.dateandtime()); doesnt work as it isnt class but its instance 
+class Student extends Person{
+  constructor(name,age,grade){
+    super(name,age);
+    this.grade = grade;
+  }
+}
+const p1 = new Person("Zen Sama",22);
+const st1 = new Student(p1.name,p1.age , 'A');
 
+console.log(p1);
+console.log(st1);
